@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+body{
+    background: url('assets/Racoon.jpg') ;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    font-family: inherit;
+    font-weight: bold;
+    color: black;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.link{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 20px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.link h2{
+    position: relative;
+    left: 50px;
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+.hero-section{
+    font-family: inherit;
+    background: url('https://www.optimath.ca/_media/img/large/p1040207.jpg');
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-size: contain;
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: auto;
+    height: 500px;
+    display: flex;
+}
+
+.hero-image{
+    flex: 1.5;
+}
+
+.hero-text{
+    flex: 1;
+    text-align: right;
+    padding: 80px;
+    position: relative;
+    line-height: 2rem;
+}
+
+.hero-text h2{
+    margin-bottom: 30px;
+}
+
+.button{
+    margin-top: 50px;
+    padding: 20px 40px 20px 40px;
+    width: fit-content;
+    background-color: #deb887;
+    border-radius: 10%;
+    position: relative;
+    top: 50px;
+    color: inherit
+}
+
+a{
+    text-decoration: none;
+}
