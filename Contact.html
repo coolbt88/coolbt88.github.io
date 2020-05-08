@@ -4,7 +4,7 @@
         <meta name="description" content="Braeden Tylbor Page">
         <meta name="keywords" content = "Computer Science, Braeden Tylbor">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Braeden Tylbor - About me</title>
+        <title>Braeden Tylbor - Contact</title>
         <link rel="Stylesheet" href=".\Styling.css">
     </head>
     <body>
@@ -26,63 +26,64 @@
                 <ul id = "navbar">
                     <li><a href="./index.html">About Me</a></li>
                     <li><a href="./Inspiration.html">Influences</a></li>
-                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
              </header>
             <section class="hero">
-                <h1>Hard Working. Enthusiastic. Punctual.</h1>
+                <h1>Contact Me</h1>
                 <h2></h2>
             </section>
         </div>
-        <section id="aboutme">
-            <div id="imageofme">
-                <img src="https://instagram.fymy1-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/80875749_679263825811317_2348464079366644193_n.jpg?_nc_ht=instagram.fymy1-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=Sf0qF0FGCAUAX97oIgG&oh=6d575d2d17d97e732fa9ecee0cb5d6de&oe=5ED3CF8B" alt="picture of me">
-            </div>
-            <h2>About Me</h2>
-            <p>Hi, I'm Braeden Tylbor. I am currently in my second year at John Abbott College but in my first year of the Computer Science program. I enjoy the programming courses the most and hope to be a software engineer in the future.</p>
-            <p>In my personal life, I enjoy weight lifting and playing video games. I've lived in Montreal for my entire life and used to play basketball for my high school team. I enjoy hanging out with friends, travelling and going on adventures.</p>
+        <section id="contact">
+            <form action="#">
+                <label for="fnameFirst">First Name (required)</label><br>
+                <input class="input" type="text" name = "fnameFirst" required><br><br>
+
+                <label for="fnameLast">Last Name (required)</label><br>
+                <input class="input" type="text" name = "fnameLast" required><br><br>
+
+                <label for="contactNumber">Phone Number (required)</label><br>
+                <input class="phone" type="tel" name = "contactNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" size="10" required>
+                <small for="contactNumberExt">Ext:</small>
+                <input class="phone" type="tel" name = "contactNumberExt" maxlength="4" size="4"><br>
+                <small>Use this format: 999-999-9999</small><br><br>
+
+                <label for="contactEmail">Email (required)</label><br>
+                <input class="input" type="email" name = "contactEmail" required><br><br>
+
+                <label>Prefered Contact Method (required)</label><br>
+                <input type="radio" id="email" name="prefCont" value="email" required>
+                <label for="email"class="radio">Email</label>
+                <input type="radio" id="phone" name="prefCont" value="phone" required>
+                <label for="phone" class="radio">Phone</label><br><br>
+
+                <label for="province">Provinces & Territories (required)</label><br>
+                <select class="input" name="province" required>
+                  <option value="alberta">Alberta</option>
+                  <option value="bc">British Columbia</option>
+                  <option value="manitoba">Manitoba</option>
+                  <option value="nb">New Brunswick</option>
+                  <option value="nl">Newfoundland and Labrador</option>
+                  <option value="ns">Nova Scotia</option>
+                  <option value="nunavut">Nunavut</option>
+                  <option value="ontario">Ontario</option>
+                  <option value="pei">Prince Edward Island</option>
+                  <option value="quebec">Quebec</option>
+                  <option value="saska">Saskatchewan</option>
+                  <option value="nwt">NotrthWest Territories</option>
+                  <option value="yukon">Yukon</option>
+                </select><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+
+                <div id="subbuttoncont">
+                    <input id="subbutton" type="submit" value="Submit">
+                </div>
+
+
+            </form>
         </section>
-        <div id="skills">
-            <div id="sktitle">
-                <h1>What can I do?</h1>
-            </div>
-            <div class="askill">
-                <h2>Video and Photo Editing</h2>
-                <p>I have moderate knowlege with the Adobe Suite in programs such as:</p>
-                <ul>
-                    <li>Premiere Pro</li>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                </ul>
-            </div>
-            <div class="askill">
-                <h2>Programming</h2>
-                <p>I have experience coding in these languages:</p>
-                <ul>
-                    <li>C#</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Powershell</li>
-                </ul>
-            </div>
-            <div class="askill">
-                <h2>Customer Service</h2>
-                <p>Working since I was 15, these skills have allowed be to thrive in all work environements:</p>
-                <ul>
-                    <li>Billingual (English and French)</li>
-                    <li>Punctual</li>
-                    <li>Great people skills</li>
-                    <li>Independant worker</li>
-                </ul>
-            </div>
-        </div>
-        <div id="questions">
-            <h1>Work inquiry, question, or something else?</h1>
-            <h2>Don't hesitate to contact me, I'm happy to help.</h2>
-            <div id="button">
-                <h1><a href="./Contact.html">Reach Out</a></h1>
-            </div>
-        </div>
         <hr>
         <footer>
             <h1>Created from scratch by Braeden Tylbor</h1>
@@ -90,4 +91,3 @@
             <h1> | 2020</h1>
         </footer>
     </body>
-</html>
